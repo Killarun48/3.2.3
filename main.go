@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 
 	"github.com/gomodule/redigo/redis"
@@ -69,8 +70,8 @@ func (r *SomeRepositoryProxy) GetData() string {
 	return realValue
 }
 
-/* func main() {
+func main() {
 	p := NewSomeRepositoryProxy("")
 	fmt.Println(p.GetData())
 	fmt.Println(p.GetData())
-} */
+}

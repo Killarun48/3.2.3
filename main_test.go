@@ -35,6 +35,9 @@ func TestSomeRepositoryProxy_GetData(t *testing.T) {
 	}
 }
 
+func TestData(t *testing.T) {
+	main()
+}
 func TestSomeRepositoryProxy_GetData_DontWorkingRedis(t *testing.T) {
 	repository := NewSomeRepositoryProxy("abc")
 	data := repository.GetData()
@@ -46,3 +49,4 @@ func TestSomeRepositoryProxy_GetData_DontWorkingRedis(t *testing.T) {
 		t.Errorf("repository.GetData() = %v, want %v", data, "data")
 	}
 }
+
